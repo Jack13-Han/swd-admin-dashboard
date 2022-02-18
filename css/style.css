@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+:root{
+    --primary-soft:#f3f3f3 ;
+}
+
+.sidebar{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar{
+        display: none;
+}
+
+
+.brand-name{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    
+}
+.nav-menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.menu-title{
+    padding: 10px 0px;
+}
+
+.menu-item{
+    padding: 10px;
+    transition: 0.8s;
+}
+
+.menu-item:hover{
+    border-radius: 50px;
+    background-color: #d8b4b4;
+}
+
+.menu-item-link{
+    color: black;
+    padding: 10px;
+    
+}
+
+.menu-item-link:hover{
+    color: black;
+    
+}
+
+.menu-item.active{
+    background-color:#d8b4b4;
+    border-radius: 50px;
+    display:block;
+   
+
+}
+
+
+
+
+.menu-item-link span{
+    
+    
+}
+
+.menu-item-link i{
+
+}
+
+.menu-spacer{
+    padding: 15px 0px;
+}
+
+
+
+
+.content{
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    /* overflow-x: hidden; */
+    box-shadow:  10px 0px 10px rgba(48, 47, 47, 0.3) inset;
+}
+ 
+.content::-webkit-scrollbar{
+    width: 5px;
+  height: 8px;
+ 
+	
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #555;
+}
+
+.header{
+    position: sticky;
+    top: 0.2rem;
+    z-index: 2000;
+}
+
+
+
+.show-sidebar-btn{
+    cursor: pointer;
+}
+
+.user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+
+}
+.dropdown-toggle{
+    padding: 2px;
+}
+
+.card{
+    border: none;
+}
+
+.status-card{
+    transition: 0.5s;
+}
+.status-card:hover{
+    cursor: pointer;
+    transform: translate(0px,-15px);
+    box-shadow: 5px 5px 10px  gray;
+}
+
+.status-card:active{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px  gray;
+}
+
+.ov-img{
+    margin-left: -25px;
+}
+
+.item-carousel{
+    margin-top: -120px;
+}
+
+
+.item-img-card{
+    
+    height: 200px;
+}
+
+
+.sub-list tr{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sub-list tr:active{
+    transform: scale(1.02);
+}
+
+
+.full-card{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2005;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 780px) {
+    .sidebar{
+        position: fixed;
+        z-index: 2001;
+        width:300px;
+        display: block !important;
+        background-color: white;
+        margin-left: -100%;
+    }
+
+    .item-carousel-card{
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
